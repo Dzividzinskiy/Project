@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dzividzinskiy</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="h">
+<nav class="nav">
+	<ul>
+		<li><a href="#">Tattoo</a></li>
+		<li><a href="#">Art</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact me</a></li>
+	</ul>
+	
+</nav>
+<div class="object one">
+<h1>Vladislav Dzividzinskiy</h1>
+<div class="socialnetworks">
+<p>SAY HI ON <a href="https://www.facebook.com/dzividzinskiy" target="_blank">FACEBOOK</a>+<a href="https://www.instagram.com/zoloti_ruky/" target="_blank">INSTAGRAM</a></p>
+</div>
+<div class="slider">
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images/IMG_0747.JPG" style="width:700px height:500px">
+  <img class="mySlides" src="images/IMG_7051.JPG" style="width:700px height:500px">
+  <img class="mySlides" src="images/IMG_2460.JPG" style="width:700px height:500px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+</div>
+</div>
+
+<div class="object two">
+
+<button>Contact me</button>
+</div>
+
+<div class="object three"><h2>About</h2></div>
+
+
+</body>
+</html>
